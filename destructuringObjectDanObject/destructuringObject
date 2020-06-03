@@ -1,0 +1,11 @@
+const profile = {
+  firstName: "Jekson",
+  lastName: "Pardede",
+  age: 21
+}
+
+const firstName = profile.firstName;
+const lastName = profile.lastName;
+const age = profile.age;
+
+console(firstName, lastName, age);

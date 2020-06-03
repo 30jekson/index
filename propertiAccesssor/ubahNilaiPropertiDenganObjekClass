@@ -1,0 +1,12 @@
+class Car{
+  constructor(manufacture,color){
+    this.manufacture = manufacture;
+    this.color = color;
+    this.enginesActive = false;
+  }
+}
+
+const johnCar = new Car("Honda","Red");
+console.log(`Warna mobil : ${johnCar.color}`); //Output -> Warna mobil : Red
+johnCar.color = "White"; //Mengubah nilai properti coor menjadi White
+console.log(`Warna mobil : ${johnCar.color}`); // Output -> Warna mobil : White

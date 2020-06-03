@@ -1,0 +1,13 @@
+// Variable belum dideklarasikan di atas fungsi/tidak ada yang dibaca
+
+function Maketea(isCold){
+  if (isCold){
+    let tea = "Make an ice Tea!"  
+  }
+  else{
+    let tea = "Make a hot Tea!"
+  }
+  return tea;
+}
+
+console.log(Maketea(false));

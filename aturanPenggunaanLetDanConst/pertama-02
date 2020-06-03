@@ -1,0 +1,6 @@
+// Const tidak dapat dideklarasikan ulang pada cakupan yang sama
+
+const name = "Jekson";
+const name = "Dani";
+
+console.log(name);

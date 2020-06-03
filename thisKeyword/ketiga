@@ -1,0 +1,23 @@
+/* Namun jika fungsi dipanggil tanpa menggunakan keyword new, this akan memiliki nilai global object (Window jika di browser). */
+
+/* Jika kita menggunakan this pada arrow function maka nilai this tersebut merupakan nilai objek di mana arrow function itu berada. */
+
+//INI MERUPAKAN REGULLAR FUNCTION
+function People(name,age,hobby){
+  this.name = name;
+  this.age = age;
+  this.hobby = hobby;
+}
+
+//Menambahkan intorMyself ke People
+People.prototype.intorMyself = function(){
+  // this -> People
+  setTimeout(function(){
+  // this -> ??
+  console.log(`Hello! Nama saya ${this.name}, umur saya ${this.age}.`)
+  console.log(`Hobby saya adalah ${this.hobby}`)
+  }, 300)
+}
+
+const programmer = new People("John",18,["Coding","Read book","Ping-pong"]);
+programmer.intorMyself();

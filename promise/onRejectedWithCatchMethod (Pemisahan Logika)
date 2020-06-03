@@ -1,0 +1,4 @@
+const makeCoffee = new Promise(executorFunction);
+makeCoffee
+.then(handlerSuccess)
+.then(null, handlerRejected);

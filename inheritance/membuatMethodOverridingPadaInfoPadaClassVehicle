@@ -1,0 +1,119 @@
+class Vehicle{
+  constructor(licensePlate,manufacture){
+    this.licensePlate = licensePlate;
+    this.manufacture = manufacture;
+    this.engineActive = false;
+  }
+
+  startEngines() { 
+    console.log(`Mesin kendaraan : ${this.licensePlate} dinyalakan!`);
+  }
+
+  info() { 
+    console.log(`Nomor kendaraan : ${this.licensePlate}`);
+    console.log(`Manufacture : ${this.manufacture}`);
+    console.log(`Mesin : ${this.engineActive ? "Active" : "Inactive"}`);
+  }
+
+  parking() { 
+    console.log(`Kendaraan ${this.licensePlate} parkir!`);
+  }
+}
+
+ // DIBAWAH INI CHILDCLASS DARI PARENTCHILD NYA : VEHICLE
+
+class Car extends Vehicle {
+  constructor(licensePlate,manufacture,wheels){
+    super(licensePlate,manufacture); /* Memberikan akses hak licensePlate dan manufacture kepada class Car */
+    this.wheels = wheels;
+  }
+
+  droveOff() {
+    console.log(`Kendaraan : ${this.licensePlate} melaju!`);
+  }
+
+  openDoor() {
+    console.log(`Membuka pintu!`);
+  }
+
+  // Overriding method info dari ParentClass
+  info() {
+    super.info();
+    console.log(`Jumlah roda : ${this.wheels}`);
+  }
+}
+const johnCar = new Car("H121S", "Honda", 4);
+johnCar.info();
+
+console.log("");
+
+class CarTwo extends Car {
+  constructor(licensePlate,manufacture,wheels){
+    super(licensePlate,manufacture); /* Memberikan akses hak licensePlate dan manufacture kepada class Car */
+    this.wheels = wheels;
+  }
+
+  droveOff() {
+    console.log(`Kendaraan : ${this.licensePlate} melaju!`);
+  }
+
+  openDoor() {
+    console.log(`Membuka pintu!`);
+  }
+
+  // Overriding method info dari ParentClass
+  info() {
+    super.info();
+  }
+}
+const dimasCar = new CarTwo("TA1408K", "Tesla", 4);
+dimasCar.info();
+
+console.log("");
+
+class Motorcycle extends Car {
+  constructor(licensePlate,manufacture,wheels){
+    super(licensePlate,manufacture);
+    this.wheels = wheels;
+  }
+
+  droveOff() {
+    console.log(`Kendaraan ${this.licensePlate}`);
+  }
+
+  doWheelie() { 
+    console.log(`Stander motor!`);
+  }
+
+  info() {
+    super.info();
+  }
+}
+const tomMotor = new Motorcycle("GF121J","Yamaha",2);
+tomMotor.info();
+
+console.log("");
+
+class Plane extends Motorcycle {
+  constructor(licensePlate,manufacture,wings){
+    super(licensePlate,manufacture);
+    this.wings = wings;
+  }
+
+  droveOff() {
+    console.log(`Menerbangkan pesawat!`);
+  }
+
+  openDoor(){
+    console.log(`Membuka pintu pesawat!`);
+  }
+  
+  info() {
+    console.log(`Nomor Kendaraan : ${this.licensePlate}`);
+    console.log(`Manufacture : ${this.manufacture}`);
+    console.log(`Jumlah sayap pesawat : ${this.wings}`);
+  }
+}
+
+const jeksonAir = new Plane("B5806TBQ","Garuda",2);
+jeksonAir.info();

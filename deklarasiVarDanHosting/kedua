@@ -1,0 +1,9 @@
+// Ini merupakan contoh pendeklarasian variable yang kurang tepat dalam pendeklarasian variables
+
+function getFood(){
+  food = "Chocolate";
+  console.log(food);
+  var food;
+}
+
+getFood();

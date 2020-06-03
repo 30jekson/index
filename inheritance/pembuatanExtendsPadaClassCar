@@ -1,0 +1,14 @@
+class Car extends Vehicle {
+  constructor(licensePlate,manufacture,wheels){
+    super(licensePlate,manufacture); /* Memberikan akses hak licensePlate dan manufacture kepada class Car */
+    this.wheels = wheels;
+  }
+
+  droveOff() {
+    console.log(`Kendaraan : ${this.licensePlate} melaju!`);
+  }
+
+  openDoor() {
+    console.log(`Membuka pintu!`);
+  }
+}

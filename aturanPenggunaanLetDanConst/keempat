@@ -1,0 +1,6 @@
+// Mengubah nilai pada array
+// Dan jika menggunakan tipe data const itu kurang tepat karena const bersifat tidak dapat diinisialisasika ulang nilainya , Dan bisa jika menggunakan let sebagai tipe dari variable nya.
+
+const fruits = ["Apple", "Orange"];
+fruits.push("Banana");
+console.log(fruits);

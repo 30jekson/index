@@ -1,0 +1,6 @@
+// Mengubah nilai pada object
+// Dan jika menggunakan tipe data const itu kurang tepat karena const bersifat tidak dapat diinisialisasika ulang nilainya , Dan bisa jika menggunakan let sebagai tipe dari variable nya.
+
+const people = {name: "John", age: 18}
+people.regency = "Bandung"
+console.log(people);

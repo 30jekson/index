@@ -1,0 +1,9 @@
+// Function Declaration
+function sayHello(greet){
+  console.log(`${greet}!`);
+}
+
+// Function Expression
+const sayName = function(name){
+  console.log(`Nama saya ${nama}`)
+}

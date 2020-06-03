@@ -1,0 +1,21 @@
+// namun pada kasus tertentu mungkin kita perlu melakukannya pada variabel yang sudah dideklarasikan. Atau kita ingin mengubah nilainya dengan nilai properti di objek. 
+
+const profile = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 18
+}
+//Karena diinisialisasikan maka tipe data diubah menjadi let
+let firstName = "Dimas";
+let age = 20;
+
+/* Menginisialisasi nilai baru melalui  objek destructuring 
+   dan memberitahukan kepada Javascript bahwa ini adalah sebuah expression sehingga assignment dapat dilakukan. */
+({firstName,age} = profile);
+
+/* Tidak bisa Karena Javascript mengira kita membuat block statement
+   dan block statement tidak bisa berada disisi kiri assignment */
+//{firstName,age} = profile;
+
+console.log(firstName);
+console.log(age);

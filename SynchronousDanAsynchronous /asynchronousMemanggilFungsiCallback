@@ -1,0 +1,8 @@
+const getCake = callback => {
+  let cake = null;
+  console.log("Sedang membuat kue, silahkan tunggu ....");
+  setTimeout(() => {
+    cake = "Kue selesai!";
+  }, 3000)
+  callback(cake); /*Kemudian kita panggil/gunakan callback yang diisikan dengan data yang akan dibawa (cake) ketika task selesai dilakukan. */
+}

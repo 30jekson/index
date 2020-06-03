@@ -1,0 +1,10 @@
+const profile = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 18
+}
+// Menambahkan nilai values kepada properti tertentu jika tidak ditemukan, maka variable akan menyimpan nilai values itu
+const {firstName,lastName,isMale = false} = profile;
+console.log(firstName)
+console.log(lastName)
+console.log(isMale)

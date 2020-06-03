@@ -1,0 +1,10 @@
+// Ini juga tidak ada variable yang terbaca diatas fungsi sebagai pendeklarasian 
+
+function getFood(){
+  food = "Chocolate";
+  console.log(food);
+  let food;
+}
+
+getFood();
+

@@ -1,0 +1,5 @@
+// Let kita dapat menginisialisasikan kembali nilai variable nya
+
+let name = "Jekson";
+name = "Dani";
+console.log(name);

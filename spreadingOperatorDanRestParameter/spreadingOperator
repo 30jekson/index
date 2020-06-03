@@ -1,0 +1,4 @@
+// Spreading Operator dituliskan dengan three consecutive dots (....)
+
+const favorites = ["Seafood","Salad","Nugget","Soup"];
+console.log(...favorites);

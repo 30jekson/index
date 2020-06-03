@@ -1,0 +1,13 @@
+class Car{
+  constructor(manufacture,color){
+    this.manufacture = manufacture;
+    this.color = color;
+    this.enginesActige = false;
+  }
+
+  const johnCar = new Car("Honda","Red");
+  const johnCar = new Car("Tesla","Black");
+
+  console.log(johnCar.manufacture);
+  console.log(johnCar.manufacture);
+}

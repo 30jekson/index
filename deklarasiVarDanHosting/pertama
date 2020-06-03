@@ -1,0 +1,13 @@
+//Ini merupakan kasus dimana var akan diangkat di atas fungsi satu tingkat . Walaupun var terlihat didalam fungsi dan menjadi block. Sebenarnya dibelakang layar Javascript selalu mengangkat var satu tingkat diatas fungsi
+
+function Maketea(isCold){
+  if(isCold){
+    var tea = "Make an ice Tea!"
+  }
+  else{
+    var tea = "Make a hot Tea!"
+  }
+  return tea;
+}
+
+console.log(Maketea(false));

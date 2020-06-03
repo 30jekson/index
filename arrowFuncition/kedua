@@ -1,0 +1,3 @@
+const upperizedName = ["Dimas","Widy", "Buchori"]
+.map(name => name.toUpperCase());
+console.log(...upperizedName);

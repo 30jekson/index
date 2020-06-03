@@ -1,0 +1,9 @@
+const programmer = {
+  name: "John",
+  age: 18,
+  hobby: ["Coding","Read book","Ping-pong"]
+}
+
+console.log(programmer.name);
+console.log(programmer.age);
+console.log(programmer.hobby);

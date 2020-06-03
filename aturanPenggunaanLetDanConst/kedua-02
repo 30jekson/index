@@ -1,0 +1,5 @@
+// Const kita tidak dapat menginisialisasikan ulang nilai pada variable nya
+
+const name = "Jekson";
+name = "Dani";
+console.log(name);

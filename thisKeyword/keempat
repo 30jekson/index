@@ -1,0 +1,18 @@
+function People(name,age,hobby){
+  this.name = name;
+  this.age = age;
+  this.hobby = hobby;
+}
+
+// Menambahkan introMyself ke People
+People.prototype.introMyself = function() {
+  //this -> People
+  setTimeout(() => { //Ini merupakan argument yang kosong 
+  //this -> People
+  console.log(`Hello! Nama saya ${this.name}, umur saya ${this.age}.`)
+  console.log(`Hobby saya adalah ${this.hobby}`);
+  }, 300)
+}
+
+const programmer = new People("John",18,["Coding","Reading book","Ping-pong"]);
+programmer.introMyself();

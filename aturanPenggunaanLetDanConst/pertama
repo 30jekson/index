@@ -1,0 +1,8 @@
+// Let tidak dapat dideklarasikan ulang pada cakupan yang sama
+
+let name = "Jekson";
+let name = "Dani";
+
+console.log(name);
+
+

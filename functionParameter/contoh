@@ -1,0 +1,10 @@
+// Name merupakan parameter dari fungsi
+const sayName = name => console.log(`${name}`);
+
+/* Pada arrow function jika terdapat dua atau lebih parameter fungsi kita perlu membungkusnya dengan tanda kurung seperti ini: */
+const sayHello = (name,greet) => console.log(`${name}, ${greet}!`);
+sayHello("Dimas","Selamat pagi");
+
+/* Namun jika kita sama sekali tidak membutuhkan parameter, biarkan saja tanda kurung tersebut kosong. */
+const sayHello = () => console.log("Selamat pagi semuanya!");
+sayHello()

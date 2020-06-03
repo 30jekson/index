@@ -1,0 +1,11 @@
+const getCake = () => {
+  let cake = null;
+  console.log("Sedang membuat kue, silahkan tunggu ....");
+  setTimeout(() => {
+    cake = "Kue selesai!"
+  }, 3000)
+  return cake;
+}
+
+const cake = getCake();
+console.log(cake);
